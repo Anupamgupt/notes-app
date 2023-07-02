@@ -71,7 +71,6 @@ function EditNotes() {
           }
         },
         (error) => {
-          console.log(error);
           disPatch(failure("image can't be uploaded!"));
         },
         () => {

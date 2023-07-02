@@ -61,7 +61,6 @@
 .desc:focus{
     border: none;
     outline: none;
-    /* outline: 1px solid rgb(123, 130, 134); */
     transition: 0.3s ease-in-out;
 }
 
