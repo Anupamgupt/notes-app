@@ -4,12 +4,12 @@ import {getFirestore} from 'firebase/firestore'
 import {getStorage} from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA3AHL7Ma00FzNr-yXRjXDx_vcudD_l-HU",
+  apiKey: "",
   authDomain: "notesapp-504e0.firebaseapp.com",
   projectId: "notesapp-504e0",
   storageBucket: "notesapp-504e0.appspot.com",
   messagingSenderId: "28275425093",
-  appId: "1:28275425093:web:6fc6fc784dff46fb91882c",
+  appId: "",
   measurementId: "G-P490SYW7VG"
 };
 
