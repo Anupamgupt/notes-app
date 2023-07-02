@@ -8,6 +8,7 @@ import "./makeNotes.css";
 import { add } from "../../store/AllnotesSlice";
 import { TiTick } from "react-icons/ti";
 import { err, failure, success } from "../../store/errorSlice";
+import { dontAdd } from "../../store/addNotesSlice";
 
 function MakeNotes() {
   const [title, setTitle] = useState("");
@@ -112,6 +113,7 @@ function MakeNotes() {
         setPinned(false);
         setDesc("");
         setImageUrl("");
+        disPatch(dontAdd());
         disPatch(success("New Note added"))
       } catch (error) {
         disPatch(failure("Note was not added"))

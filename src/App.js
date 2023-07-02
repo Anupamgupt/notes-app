@@ -5,12 +5,12 @@ import { useSelector } from 'react-redux';
 import Error from './error/Error';
 
 function App() {
-  const data=useSelector((state)=>state.update)
+  const mode=useSelector((state)=>state.mode)
   return (
-    <div className="App">
+    <div className={mode?"App":"App app-dark"}>
         <Navbar />
         <Landing/>
-        <div>
+        <div className='wrong'>
           <Error/>
         </div>
     </div>  

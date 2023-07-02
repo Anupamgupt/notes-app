@@ -11,6 +11,10 @@
     margin-bottom: 3rem;
 }
 
+.landing-dark{
+    box-shadow: 0px 0px 5px 2px rgb(22, 23, 24);
+}
+
 .make-notes{
     position: sticky;
     top:30%;

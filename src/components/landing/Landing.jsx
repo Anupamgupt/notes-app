@@ -20,25 +20,30 @@ function Landing() {
   useEffect(()=>{
     console.log(status)
   },[])
-  // console.log(loader)
+  const [adding,setAdding]=useState(false);
+  const mode=useSelector((state)=>state.mode)
   
   useEffect(() => {
-    
     const handleResize = () => {
       if (window.innerWidth < 600) {
-        dispatch(dontAdd())
+        setAdding(true)
       }
     };
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-
-  }, [dispatch]);
+    if(adding){
+      dispatch(dontAdd());
+    }
+    if(!adding){
+      window.addEventListener('resize', handleResize);
+      handleResize();
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+   
+  }, [dispatch,adding]);
  
   return (
-    <div className="landing">
+    <div className={mode?"landing":"landing landing-dark"}>
       {isAdd && (
         <div className="make-notes">
           <MakeNotes />

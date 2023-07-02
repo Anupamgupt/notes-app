@@ -25,7 +25,7 @@ function Navbar() {
   },[addNote])
 
   return (
-    <div className="navbar">
+    <div className={mode ?"navbar":"navbar navbar-dark"}>
       <div className="add" onClick={handleAddNote}>
         <BiPlus className="plus" />
         {add} Notes

@@ -10,3 +10,13 @@ body{
     overflow: auto;
     overflow-x: hidden;
 }
+
+.wrong{
+    position: absolute;
+    top:20px;
+    width: 100%;
+}
+
+.app-dark{
+    background-color: rgb(22, 37, 39);
+}

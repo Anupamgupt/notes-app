@@ -11,11 +11,27 @@
     z-index: 100;
 }
 
+.navbar-dark{
+    background-color:rgba(0, 0, 0,0.9);
+    box-shadow: 0px 0px 5px 1px rgb(5, 5, 5);
+}
+
 .navbar>p{
     font-size: 24px;
     font-weight: 600;    
 }
+.navbar-dark>p{
+    color:rgb(224, 222, 222) ;
+}
 
+.navbar-dark .plus{
+    background-color: aliceblue;
+    color: rgb(19, 18, 20);
+    box-shadow: 0px 0px 5px 1px rgb(164, 172, 179);
+}
+.navbar-dark .add{
+    color:rgb(224, 222, 222) ;
+}
 .add{
     display: flex;
     align-items: center;
@@ -57,6 +73,12 @@
     justify-content: space-between;
     border-radius: 40px;
     cursor: pointer;
+}
+
+.navbar-dark .modes>div{
+    background-color: aliceblue;
+    width: 4.4rem;
+    box-shadow: 0px 0px 5px 1px rgb(164, 172, 179);
 }
 
 .modes>div>img{
@@ -112,4 +134,8 @@
     .modes>div{
         width: 4rem;
     }
+    .navbar-dark .modes>div{
+        width: 4.06rem;
+    }
+
 }

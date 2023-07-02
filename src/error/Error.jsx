@@ -11,6 +11,7 @@ function Error() {
     const {errorStatus,errorMessage}=useSelector((state)=>state.error)
     const [show,setShow]=useState("");
     const dispatch=useDispatch();
+    const mode=useSelector((state)=>state.mode)
     useEffect(()=>{
         if (errorStatus !== "") {
             setAlert(true);
